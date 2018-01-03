@@ -1,0 +1,31 @@
+
+
+{
+  "manifest_version": 2,
+  "name": "Image Extension",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.facebook.com/*",
+"https://*.youtube.com/*",
+"https://*.instagram.com/*",  "https://www.google.com/*"
+
+
+      ],
+      "js": ["jquery-3.1.1.min.js","popup.js"]
+    }
+  ],
+
+  "permissions": [ 
+
+                   "activeTab" ],
+  
+   "browser_action": {
+    "default_title": "Image",
+    
+    "default_popup": "popup.html",
+     "default_title": "Click here!"
+    
+  }
+}
